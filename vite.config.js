@@ -5,7 +5,7 @@ export default defineConfig({
   plugins: [react()],
   base: '/wpr-quiz-aramco/',
   build: {
-    outDir: 'dist',
+    outDir: 'docs',
     assetsDir: 'assets',
     sourcemap: true
   }
