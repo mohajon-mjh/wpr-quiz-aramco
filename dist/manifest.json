@@ -1,0 +1,16 @@
+{
+  "name": "Saudi Aramco Work Permit Quiz",
+  "short_name": "Aramco Quiz",
+  "description": "Practice quiz for Saudi Aramco work permit receiver",
+  "start_url": "/wpr-quiz-aramco/",
+  "display": "standalone",
+  "background_color": "#1a472a",
+  "theme_color": "#2d6a4f",
+  "icons": [
+    {
+      "src": "/vite.svg",
+      "sizes": "64x64",
+      "type": "image/svg+xml"
+    }
+  ]
+}

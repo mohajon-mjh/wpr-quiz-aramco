@@ -1,0 +1,124 @@
+{
+  "questions": [
+    {
+      "id": 1,
+      "category": "Work Permit Basics",
+      "question": "What is the purpose of a Saudi Aramco work permit?",
+      "options": [
+        "To authorize specific work activities",
+        "To enter the country",
+        "To get a salary",
+        "To apply for leave"
+      ],
+      "correct": 0
+    },
+    {
+      "id": 2,
+      "category": "Safety Rules",
+      "question": "What is the first thing you should do before starting any work?",
+      "options": [
+        "Start working immediately",
+        "Check the work permit and JSA",
+        "Call your supervisor",
+        "Take a break"
+      ],
+      "correct": 1
+    },
+    {
+      "id": 3,
+      "category": "PPE",
+      "question": "What is the minimum PPE required at all Saudi Aramco work sites?",
+      "options": [
+        "Hard hat, safety glasses, safety shoes",
+        "Gloves only",
+        "Mask and gloves",
+        "Nothing"
+      ],
+      "correct": 0
+    },
+    {
+      "id": 4,
+      "category": "Permit Types",
+      "question": "Which permit is required for hot work (welding, grinding)?",
+      "options": [
+        "Hot work permit",
+        "Cold work permit",
+        "Excavation permit",
+        "Confined space permit"
+      ],
+      "correct": 0
+    },
+    {
+      "id": 5,
+      "category": "Emergency",
+      "question": "What should you do in case of a fire at the worksite?",
+      "options": [
+        "Run away",
+        "Call 911 and evacuate",
+        "Try to extinguish without training",
+        "Hide"
+      ],
+      "correct": 1
+    },
+    {
+      "id": 6,
+      "category": "Work Permit Basics",
+      "question": "How long is a Saudi Aramco work permit valid?",
+      "options": [
+        "24 hours",
+        "12 hours",
+        "8 hours",
+        "As long as the job takes"
+      ],
+      "correct": 0
+    },
+    {
+      "id": 7,
+      "category": "Safety Rules",
+      "question": "What is a JSA (Job Safety Analysis)?",
+      "options": [
+        "A checklist to identify hazards",
+        "A salary form",
+        "A leave application",
+        "A training certificate"
+      ],
+      "correct": 0
+    },
+    {
+      "id": 8,
+      "category": "Permit Types",
+      "question": "What does a 'Cold Work Permit' cover?",
+      "options": [
+        "Activities without fire or sparks",
+        "Welding",
+        "Grinding",
+        "All work types"
+      ],
+      "correct": 0
+    },
+    {
+      "id": 9,
+      "category": "Emergency",
+      "question": "What is the first step in an emergency evacuation?",
+      "options": [
+        "Alert others and leave immediately",
+        "Take your belongings",
+        "Call your family",
+        "Finish your work"
+      ],
+      "correct": 0
+    },
+    {
+      "id": 10,
+      "category": "PPE",
+      "question": "When should you wear a safety harness?",
+      "options": [
+        "When working at heights above 1.8 meters",
+        "Always",
+        "When working on the ground",
+        "Only when the supervisor says"
+      ],
+      "correct": 0
+    }
+  ]
+}
