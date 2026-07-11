@@ -1,104 +1,196 @@
-import { useState } from 'react'
+import { useState, useEffect } from 'react'
 import './App.css'
 import questionsData from './questions.json'
 
+const allQuestions = questionsData.questions
+const categories = ['All', ...new Set(allQuestions.map(q => q.category))]
+
+function shuffle(arr) {
+  const a = [...arr]
+  for (let i = a.length - 1; i > 0; i--) {
+    const j = Math.floor(Math.random() * (i + 1));
+    [a[i], a[j]] = [a[j], a[i]]
+  }
+  return a
+}
+
 function App() {
-  const [currentQuestion, setCurrentQuestion] = useState(0)
-  const [score, setScore] = useState(0)
-  const [showResult, setShowResult] = useState(false)
-  const [selectedOption, setSelectedOption] = useState(null)
+  const [stage, setStage] = useState('start') // start | test | result
   const [categoryFilter, setCategoryFilter] = useState('All')
-  
-  const questions = questionsData.questions
-  const categories = ['All', ...new Set(questions.map(q => q.category))]
-  
-  const filteredQuestions = categoryFilter === 'All' 
-    ? questions 
-    : questions.filter(q => q.category === categoryFilter)
+  const [testQuestions, setTestQuestions] = useState([])
+  const [currentIndex, setCurrentIndex] = useState(0)
+  const [answers, setAnswers] = useState({})
+  const [timeLeft, setTimeLeft] = useState(0)
 
-  const handleAnswer = (index) => {
-    setSelectedOption(index)
-    if (index === filteredQuestions[currentQuestion].correct) {
-      setScore(score + 1)
+  useEffect(() => {
+    if (stage !== 'test') return
+    if (timeLeft <= 0) {
+      setStage('result')
+      return
     }
+    const timer = setInterval(() => setTimeLeft(t => t - 1), 1000)
+    return () => clearInterval(timer)
+  }, [stage, timeLeft])
+
+  const startTest = () => {
+    const pool = categoryFilter === 'All'
+      ? allQuestions
+      : allQuestions.filter(q => q.category === categoryFilter)
+    const shuffled = shuffle(pool)
+    setTestQuestions(shuffled)
+    setCurrentIndex(0)
+    setAnswers({})
+    setTimeLeft(shuffled.length * 45)
+    setStage('test')
   }
 
-  const nextQuestion = () => {
-    if (currentQuestion + 1 < filteredQuestions.length) {
-      setCurrentQuestion(currentQuestion + 1)
-      setSelectedOption(null)
+  const selectOption = (idx) => {
+    setAnswers(prev => ({ ...prev, [currentIndex]: idx }))
+  }
+
+  const goNext = () => {
+    if (currentIndex + 1 < testQuestions.length) {
+      setCurrentIndex(currentIndex + 1)
     } else {
-      setShowResult(true)
+      setStage('result')
     }
   }
 
-  const resetQuiz = () => {
-    setCurrentQuestion(0)
-    setScore(0)
-    setShowResult(false)
-    setSelectedOption(null)
-    setCategoryFilter('All')
+  const goPrev = () => {
+    if (currentIndex > 0) setCurrentIndex(currentIndex - 1)
   }
 
-  if (showResult) {
-    const percentage = (score / filteredQuestions.length) * 100
+  const formatTime = (s) => {
+    const m = Math.floor(s / 60)
+    const sec = s % 60
+    return `${m}:${sec.toString().padStart(2, '0')}`
+  }
+
+  if (stage === 'start') {
     return (
-      <div className="quiz-container">
-        <h1>📊 Saudi Aramco Permit Quiz Result</h1>
-        <div className="result-box">
-          <h2>{score}/{filteredQuestions.length}</h2>
-          <p>✅ Score: {percentage}%</p>
-          <p>{percentage >= 80 ? "🎉 Congratulations! You are eligible for Saudi Aramco work permit!" : "❌ Please review the safety rules and try again. You need 80% to pass."}</p>
-          <button onClick={resetQuiz} className="reset-btn">🔄 Retry Quiz</button>
+      <div className="app-container">
+        <div className="test-card start-card">
+          <div className="logo">🛢️</div>
+          <h1>Saudi Aramco Work Permit Quiz</h1>
+          <p className="subtitle">Computer-Based Test (CBT) Practice</p>
+
+          <label className="field-label">Select Category</label>
+          <select
+            className="category-select"
+            value={categoryFilter}
+            onChange={e => setCategoryFilter(e.target.value)}
+          >
+            {categories.map(cat => {
+              const count = cat === 'All'
+                ? allQuestions.length
+                : allQuestions.filter(q => q.category === cat).length
+              return (
+                <option key={cat} value={cat}>
+                  {cat} ({count})
+                </option>
+              )
+            })}
+          </select>
+
+          <button className="btn-primary" onClick={startTest}>Start Test</button>
         </div>
       </div>
     )
   }
 
-  return (
-    <div className="quiz-container">
-      <h1>🛢️ Saudi Aramco Work Permit Quiz</h1>
-      
-      <div className="category-filter">
-        <select 
-          value={categoryFilter} 
-          onChange={(e) => {
-            setCategoryFilter(e.target.value)
-            setCurrentQuestion(0)
-            setSelectedOption(null)
-            setScore(0)
-          }}
-          className="category-select"
-        >
-          {categories.map(cat => (
-            <option key={cat} value={cat}>{cat}</option>
-          ))}
-        </select>
-      </div>
+  if (stage === 'test') {
+    const q = testQuestions[currentIndex]
+    const selected = answers[currentIndex]
+    const answeredCount = Object.keys(answers).length
 
-      <div className="question-box">
-        <div className="question-header">
-          <h3>Question {currentQuestion + 1}/{filteredQuestions.length}</h3>
-          <span className="category-tag">{filteredQuestions[currentQuestion].category}</span>
+    return (
+      <div className="app-container">
+        <div className="test-header">
+          <div className="test-header-top">
+            <span className="test-title">Saudi Aramco Work Permit Quiz</span>
+            <span className="timer">⏱ {formatTime(timeLeft)}</span>
+          </div>
+          <div className="progress-bar">
+            <div
+              className="progress-fill"
+              style={{ width: `${((currentIndex + 1) / testQuestions.length) * 100}%` }}
+            />
+          </div>
+          <div className="progress-text">
+            Question {currentIndex + 1} of {testQuestions.length} &middot; Answered {answeredCount}/{testQuestions.length}
+          </div>
         </div>
-        <p className="question">{filteredQuestions[currentQuestion].question}</p>
-        <div className="options">
-          {filteredQuestions[currentQuestion].options.map((option, index) => (
-            <button
-              key={index}
-              onClick={() => handleAnswer(index)}
-              className={`option-btn ${selectedOption === index ? 'selected' : ''}`}
-              disabled={selectedOption !== null}
-            >
-              {option}
+
+        <div className="test-card">
+          <span className="category-badge">{q.category}</span>
+          <h2 className="question-text">{q.question}</h2>
+          <div className="options-list">
+            {q.options.map((opt, idx) => (
+              <button
+                key={idx}
+                className={`option-item ${selected === idx ? 'selected' : ''}`}
+                onClick={() => selectOption(idx)}
+              >
+                <span className="option-letter">{String.fromCharCode(65 + idx)}</span>
+                <span className="option-text">{opt}</span>
+              </button>
+            ))}
+          </div>
+
+          <div className="nav-buttons">
+            <button className="btn-secondary" onClick={goPrev} disabled={currentIndex === 0}>
+              Previous
             </button>
-          ))}
+            {currentIndex + 1 < testQuestions.length ? (
+              <button className="btn-primary" onClick={goNext}>Next</button>
+            ) : (
+              <button className="btn-primary btn-submit" onClick={() => setStage('result')}>
+                Submit Test
+              </button>
+            )}
+          </div>
         </div>
-        {selectedOption !== null && (
-          <button onClick={nextQuestion} className="next-btn">
-            {currentQuestion + 1 === filteredQuestions.length ? "📊 Show Results" : "➡️ Next Question"}
-          </button>
-        )}
+      </div>
+    )
+  }
+
+  const score = testQuestions.reduce(
+    (acc, q, i) => acc + (answers[i] === q.correct ? 1 : 0), 0
+  )
+  const percent = testQuestions.length ? Math.round((score / testQuestions.length) * 100) : 0
+  const passed = percent >= 70
+
+  return (
+    <div className="app-container">
+      <div className="test-card result-card">
+        <div className={`result-badge ${passed ? 'pass' : 'fail'}`}>
+          {passed ? '✅ PASS' : '❌ FAIL'}
+        </div>
+        <h1>Test Result</h1>
+        <div className="score-circle">
+          <span className="score-number">{percent}%</span>
+        </div>
+        <p className="score-detail">{score} out of {testQuestions.length} correct</p>
+
+        <div className="review-list">
+          {testQuestions.map((q, i) => {
+            const userAns = answers[i]
+            const isCorrect = userAns === q.correct
+            return (
+              <div key={i} className={`review-item ${isCorrect ? 'correct' : 'incorrect'}`}>
+                <div className="review-question">{i + 1}. {q.question}</div>
+                <div className="review-answer">
+                  Your answer: {userAns !== undefined ? q.options[userAns] : '(not answered)'}
+                </div>
+                {!isCorrect && (
+                  <div className="review-correct">Correct answer: {q.options[q.correct]}</div>
+                )}
+              </div>
+            )
+          })}
+        </div>
+
+        <button className="btn-primary" onClick={() => setStage('start')}>Take Another Test</button>
       </div>
     </div>
   )
