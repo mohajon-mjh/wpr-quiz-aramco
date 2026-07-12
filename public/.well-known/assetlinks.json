@@ -1,0 +1,8 @@
+[{
+      "relation": ["delegate_permission/common.handle_all_urls"],
+      "target": {
+        "namespace": "android_app",
+        "package_name": "com.wprquiz.mjh",
+        "sha256_cert_fingerprints": ["8B:85:6A:68:85:0C:C5:83:5C:CF:EE:58:9B:1A:19:40:59:55:F2:AA:A4:C5:02:3D:6B:62:61:63:7C:AC:4E:A2"]
+      }
+    }]
