@@ -3,14 +3,26 @@
   "short_name": "Aramco Quiz",
   "description": "Practice quiz for Saudi Aramco work permit receiver",
   "start_url": "/wpr-quiz-aramco/",
+  "scope": "/wpr-quiz-aramco/",
   "display": "standalone",
-  "background_color": "#1a472a",
-  "theme_color": "#2d6a4f",
+  "orientation": "portrait",
+  "dir": "ltr",
+  "lang": "en",
+  "background_color": "#eef1f5",
+  "theme_color": "#1a6fb0",
+  "categories": ["education"],
   "icons": [
     {
-      "src": "/vite.svg",
-      "sizes": "64x64",
-      "type": "image/svg+xml"
+      "src": "/wpr-quiz-aramco/icons/icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "/wpr-quiz-aramco/icons/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
     }
   ]
 }
