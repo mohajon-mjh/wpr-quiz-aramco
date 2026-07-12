@@ -1,6 +1,7 @@
 import { useState, useEffect } from 'react'
 import './App.css'
 import questionsData from './questions.json'
+import { abbreviations, permitGuide, safetyItems } from './referenceData'
 
 const allQuestions = questionsData.questions
 const categories = ['All', ...new Set(allQuestions.map(q => q.category))]
@@ -110,6 +111,48 @@ function App() {
           </select>
 
           <button className="btn-primary" onClick={startTest}>Start Test</button>
+          <button className="btn-secondary ref-btn" onClick={() => setStage('reference')}>
+            📖 Reference Guide
+          </button>
+        </div>
+      </div>
+    )
+  }
+
+  if (stage === 'reference') {
+    return (
+      <div className="app-container">
+        <div className="test-card reference-card">
+          <h1 className="ref-title">📖 Work Permit Reference Guide</h1>
+
+          <h2 className="ref-section-title">Common Abbreviations</h2>
+          <div className="ref-grid">
+            {abbreviations.map((a, i) => (
+              <div key={i} className="ref-abbr-item">
+                <span className="ref-abbr-term">{a.term}</span>
+                <span className="ref-abbr-meaning">{a.meaning}</span>
+              </div>
+            ))}
+          </div>
+
+          <h2 className="ref-section-title">Which Permit for Which Job?</h2>
+          <div className="ref-table">
+            {permitGuide.map((p, i) => (
+              <div key={i} className="ref-table-row">
+                <span className="ref-job">{p.job}</span>
+                <span className="ref-permit">{p.permit}</span>
+              </div>
+            ))}
+          </div>
+
+          <h2 className="ref-section-title">Common Safety Items / PPE Checklist</h2>
+          <ul className="ref-list">
+            {safetyItems.map((item, i) => (
+              <li key={i}>{item}</li>
+            ))}
+          </ul>
+
+          <button className="btn-primary" onClick={() => setStage('start')}>Back to Home</button>
         </div>
       </div>
     )

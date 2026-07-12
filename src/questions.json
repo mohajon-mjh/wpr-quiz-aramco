@@ -2939,6 +2939,1266 @@
       ],
       "correct": 0,
       "id": 245
+    },
+    {
+      "category": "Work Permit Basics",
+      "question": "What should be included in the 'precautions' section of a work permit?",
+      "options": [
+        "Specific safety measures required to control the identified hazards",
+        "Only the worker's name",
+        "The company logo",
+        "A list of nearby restaurants"
+      ],
+      "correct": 0,
+      "id": 246
+    },
+    {
+      "category": "Work Permit Basics",
+      "question": "Why is it important for the WPR to physically visit the job site before signing?",
+      "options": [
+        "To confirm actual conditions match what is stated on the permit",
+        "Physical visits are unnecessary if the permit is detailed",
+        "Only the Permit Issuer needs to visit",
+        "It is only required for night shifts"
+      ],
+      "correct": 0,
+      "id": 247
+    },
+    {
+      "category": "Work Permit Basics",
+      "question": "What should be done if a permit references an outdated JSA?",
+      "options": [
+        "Update the JSA to reflect current conditions before work begins",
+        "Proceed using the outdated JSA",
+        "Ignore the JSA entirely",
+        "Only update it if an incident occurs"
+      ],
+      "correct": 0,
+      "id": 248
+    },
+    {
+      "category": "Work Permit Basics",
+      "question": "What is the purpose of a permit register or log book?",
+      "options": [
+        "To maintain a record of all permits issued for tracking and audit",
+        "It has no functional purpose",
+        "Only for billing purposes",
+        "To list employee birthdays"
+      ],
+      "correct": 0,
+      "id": 249
+    },
+    {
+      "category": "Work Permit Basics",
+      "question": "Who should be consulted if there is a disagreement about permit conditions?",
+      "options": [
+        "The Area Authority or higher safety authority for resolution",
+        "Whoever is available nearby",
+        "No one, the WPR decides alone",
+        "The matter should be dropped"
+      ],
+      "correct": 0,
+      "id": 250
+    },
+    {
+      "category": "Work Permit Basics",
+      "question": "What must happen before extending a permit's validity beyond its original period?",
+      "options": [
+        "A reassessment of site conditions and renewed approval",
+        "Nothing, extension is automatic",
+        "Only the worker needs to agree",
+        "Extensions are never allowed regardless of circumstances"
+      ],
+      "correct": 0,
+      "id": 251
+    },
+    {
+      "category": "Work Permit Basics",
+      "question": "Why should permit copies be readily available to inspectors or auditors?",
+      "options": [
+        "To demonstrate compliance and allow verification of safe work practices",
+        "Inspectors never need to see permits",
+        "Only for legal disputes",
+        "It has no real safety relevance"
+      ],
+      "correct": 0,
+      "id": 252
+    },
+    {
+      "category": "Work Permit Basics",
+      "question": "What is a common reason permits get suspended mid-job?",
+      "options": [
+        "A change in weather, hazard level, or nearby operations affecting safety",
+        "The worker wants a break",
+        "It's the end of the work day, regardless of conditions",
+        "Permits are never suspended once issued"
+      ],
+      "correct": 0,
+      "id": 253
+    },
+    {
+      "category": "Work Permit Basics",
+      "question": "What should be verified before a permit is issued for work in a live process area?",
+      "options": [
+        "That interfaces with ongoing operations are identified and controlled",
+        "Live process areas require no special verification",
+        "Only the shift supervisor needs informal awareness",
+        "It is the same as work in a shutdown area"
+      ],
+      "correct": 0,
+      "id": 254
+    },
+    {
+      "category": "Work Permit Basics",
+      "question": "Why is it important that permit forms are filled out legibly and completely?",
+      "options": [
+        "Incomplete or unclear permits can lead to misunderstanding of critical safety information",
+        "Legibility has no bearing on safety outcomes",
+        "Only the signature needs to be clear",
+        "Permits are rarely reviewed after issuance"
+      ],
+      "correct": 0,
+      "id": 255
+    },
+    {
+      "category": "Work Permit Basics",
+      "question": "What should a WPR do if required precautions listed on the permit cannot be implemented?",
+      "options": [
+        "Stop work and inform the Permit Issuer before proceeding",
+        "Proceed and implement partial precautions",
+        "Assume it will be fine without those precautions",
+        "Wait until the end of the shift to mention it"
+      ],
+      "correct": 0,
+      "id": 256
+    },
+    {
+      "category": "Work Permit Basics",
+      "question": "What is the significance of a 'simultaneous operations' (SIMOPS) review?",
+      "options": [
+        "To identify and manage risks from multiple activities happening at once nearby",
+        "It only applies to offshore facilities",
+        "SIMOPS reviews are optional paperwork",
+        "It replaces the need for individual permits"
+      ],
+      "correct": 0,
+      "id": 257
+    },
+    {
+      "category": "Work Permit Basics",
+      "question": "Why should a permit clearly state the exact equipment or system being worked on?",
+      "options": [
+        "To avoid confusion and ensure work is performed on the correct equipment",
+        "Equipment identification is not important for permits",
+        "Only the area name matters, not specific equipment",
+        "It is only relevant for very large equipment"
+      ],
+      "correct": 0,
+      "id": 258
+    },
+    {
+      "category": "Work Permit Basics",
+      "question": "What should happen if an unauthorized person attempts to perform work under someone else's permit?",
+      "options": [
+        "Work must stop immediately as this is a serious safety violation",
+        "It is acceptable if they have relevant experience",
+        "Only a warning is needed, work can continue",
+        "It has no real safety implication"
+      ],
+      "correct": 0,
+      "id": 259
+    },
+    {
+      "category": "Work Permit Basics",
+      "question": "What is the benefit of conducting a final walk-down before closing a permit?",
+      "options": [
+        "To confirm the area is left in a safe condition and no hazards remain",
+        "It is only a cosmetic check",
+        "Final walk-downs are optional and rarely useful",
+        "Only required for very large jobs"
+      ],
+      "correct": 0,
+      "id": 260
+    },
+    {
+      "category": "Safety Rules",
+      "question": "What is the purpose of a hazard hunt or safety walk?",
+      "options": [
+        "To proactively identify and correct hazards before they cause harm",
+        "It is only a management exercise with no real impact",
+        "Hazard hunts replace the need for permits",
+        "Only new employees participate in hazard hunts"
+      ],
+      "correct": 0,
+      "id": 261
+    },
+    {
+      "category": "Safety Rules",
+      "question": "Why should tools be inspected and matched to the specific task?",
+      "options": [
+        "Using the wrong or damaged tool can cause injury or equipment damage",
+        "Any tool works for any task equally well",
+        "Tool selection has no safety relevance",
+        "Only power tools require task-matching"
+      ],
+      "correct": 0,
+      "id": 262
+    },
+    {
+      "category": "Safety Rules",
+      "question": "What should be done if a work area lacks adequate lighting?",
+      "options": [
+        "Improve lighting before proceeding with hazardous tasks",
+        "Continue work using a mobile phone flashlight",
+        "Ignore lighting issues if the task is short",
+        "Lighting only matters for night shifts"
+      ],
+      "correct": 0,
+      "id": 263
+    },
+    {
+      "category": "Safety Rules",
+      "question": "Why is situational awareness important on an industrial site?",
+      "options": [
+        "It helps workers notice and respond to hazards as conditions change",
+        "Situational awareness only matters for supervisors",
+        "It has no real safety benefit",
+        "It is only relevant during emergencies"
+      ],
+      "correct": 0,
+      "id": 264
+    },
+    {
+      "category": "Safety Rules",
+      "question": "What should be done with unauthorized modifications to safety equipment?",
+      "options": [
+        "Report and remove them immediately, restoring proper function",
+        "Leave them as is if they seem harmless",
+        "Modifications are acceptable if made by experienced workers",
+        "Only address them during scheduled audits"
+      ],
+      "correct": 0,
+      "id": 265
+    },
+    {
+      "category": "Safety Rules",
+      "question": "Why should workers avoid taking shortcuts around established safety procedures?",
+      "options": [
+        "Shortcuts often remove critical controls and increase the risk of incidents",
+        "Shortcuts save time with no real risk",
+        "Procedures are only guidelines, not requirements",
+        "Experienced workers don't need to follow procedures"
+      ],
+      "correct": 0,
+      "id": 266
+    },
+    {
+      "category": "Safety Rules",
+      "question": "What is the purpose of a permit-to-work risk matrix?",
+      "options": [
+        "To help categorize the severity and likelihood of hazards for proper controls",
+        "It is only used for insurance purposes",
+        "Risk matrices have no practical safety use",
+        "Only used for high-value equipment"
+      ],
+      "correct": 0,
+      "id": 267
+    },
+    {
+      "category": "Safety Rules",
+      "question": "Why must all workers understand the specific risks of the job before starting?",
+      "options": [
+        "Awareness of risks allows workers to take appropriate precautions",
+        "Understanding risks is only the supervisor's responsibility",
+        "Workers can rely on experience alone without task-specific briefing",
+        "Risk awareness has no bearing on incident prevention"
+      ],
+      "correct": 0,
+      "id": 268
+    },
+    {
+      "category": "Safety Rules",
+      "question": "What should be done if safety equipment is found to be non-compliant with standards?",
+      "options": [
+        "Remove it from use and replace with compliant equipment",
+        "Continue using it if it appears functional",
+        "Only replace it during the next scheduled purchase",
+        "Non-compliance is acceptable for short-term use"
+      ],
+      "correct": 0,
+      "id": 269
+    },
+    {
+      "category": "Safety Rules",
+      "question": "Why is reporting unsafe conditions considered a shared responsibility?",
+      "options": [
+        "Everyone benefits from a safer environment, and hazards can be missed by just one person",
+        "Only safety officers are responsible for identifying hazards",
+        "Reporting is optional and adds unnecessary workload",
+        "Only supervisors are expected to notice hazards"
+      ],
+      "correct": 0,
+      "id": 270
+    },
+    {
+      "category": "Safety Rules",
+      "question": "What should be done before working near rotating or moving machinery?",
+      "options": [
+        "Ensure guards are in place and the machine is properly isolated if required",
+        "Proceed carefully without checking guards",
+        "Assume the machine is safe if it's not making noise",
+        "Only check guards during scheduled maintenance"
+      ],
+      "correct": 0,
+      "id": 271
+    },
+    {
+      "category": "Safety Rules",
+      "question": "Why should a 'buddy system' be used for certain hazardous tasks?",
+      "options": [
+        "It ensures immediate help is available if something goes wrong",
+        "Buddy systems slow down work unnecessarily",
+        "It is only required for confined space work",
+        "Working alone is equally safe for all tasks"
+      ],
+      "correct": 0,
+      "id": 272
+    },
+    {
+      "category": "Safety Rules",
+      "question": "What is the value of documenting lessons learned from safety incidents?",
+      "options": [
+        "It helps prevent similar incidents from happening again across the site",
+        "Documentation has no real safety impact",
+        "Lessons learned are only useful for legal purposes",
+        "Only major incidents need to be documented"
+      ],
+      "correct": 0,
+      "id": 273
+    },
+    {
+      "category": "Safety Rules",
+      "question": "Why should temporary safety measures (like barricades) be clearly marked with an expiry or review date?",
+      "options": [
+        "To ensure they are not forgotten and are properly reviewed or removed",
+        "Temporary measures never need review",
+        "Marking dates is only a paperwork exercise",
+        "Only permanent measures need review dates"
+      ],
+      "correct": 0,
+      "id": 274
+    },
+    {
+      "category": "Safety Rules",
+      "question": "What should be done if weather conditions become hazardous during outdoor work?",
+      "options": [
+        "Reassess the risk and stop work if conditions become unsafe",
+        "Continue work regardless of weather changes",
+        "Only stop if lightning is directly overhead",
+        "Weather has no bearing on general work safety"
+      ],
+      "correct": 0,
+      "id": 275
+    },
+    {
+      "category": "PPE",
+      "question": "What is the purpose of a dust mask versus a full respirator?",
+      "options": [
+        "Dust masks protect against particulates only, while respirators can filter gases and vapors too",
+        "They provide identical protection in all situations",
+        "Dust masks are always sufficient for chemical exposure",
+        "Respirators are only needed for confined spaces"
+      ],
+      "correct": 0,
+      "id": 276
+    },
+    {
+      "category": "PPE",
+      "question": "Why should PPE selection be based on a documented risk assessment?",
+      "options": [
+        "To ensure the PPE matches the actual hazards present in the task",
+        "PPE selection can be based on personal preference alone",
+        "All PPE provides the same level of protection regardless of hazard",
+        "Risk assessments are unrelated to PPE choice"
+      ],
+      "correct": 0,
+      "id": 277
+    },
+    {
+      "category": "PPE",
+      "question": "What should be checked about chemical-resistant gloves before handling a specific substance?",
+      "options": [
+        "That the glove material is compatible with that specific chemical",
+        "Any glove material works for any chemical",
+        "Only the glove size matters",
+        "Chemical compatibility is not a real concern"
+      ],
+      "correct": 0,
+      "id": 278
+    },
+    {
+      "category": "PPE",
+      "question": "Why is layering of PPE sometimes necessary (e.g., gloves under heat-resistant gloves)?",
+      "options": [
+        "To provide combined protection against multiple hazards present simultaneously",
+        "Layering PPE is never necessary",
+        "It is only done for extra comfort",
+        "Layering reduces protection and should be avoided"
+      ],
+      "correct": 0,
+      "id": 279
+    },
+    {
+      "category": "PPE",
+      "question": "What should be done if PPE causes discomfort that affects task performance?",
+      "options": [
+        "Report it so a properly fitting or suitable alternative can be provided",
+        "Remove the PPE to work more comfortably",
+        "Ignore discomfort since safety is more important than comfort",
+        "Discomfort should never be reported"
+      ],
+      "correct": 0,
+      "id": 280
+    },
+    {
+      "category": "PPE",
+      "question": "Why must safety footwear be resistant to specific site hazards (e.g., chemical spills, punctures)?",
+      "options": [
+        "Different hazards require different protective features in footwear",
+        "All safety footwear provides identical protection",
+        "Footwear hazard resistance is not an important consideration",
+        "Only steel-toe protection matters, regardless of other hazards"
+      ],
+      "correct": 0,
+      "id": 281
+    },
+    {
+      "category": "PPE",
+      "question": "What is the purpose of a full-face respirator compared to a half-face respirator?",
+      "options": [
+        "It also protects the eyes and face from splashes or irritants, in addition to breathing",
+        "Full-face respirators offer no additional protection",
+        "Half-face respirators are always sufficient for chemical vapors",
+        "The difference is purely cosmetic"
+      ],
+      "correct": 0,
+      "id": 282
+    },
+    {
+      "category": "PPE",
+      "question": "Why should PPE compliance be monitored through site inspections?",
+      "options": [
+        "To ensure workers are consistently using the required protection correctly",
+        "Monitoring PPE use has no safety benefit",
+        "PPE compliance only matters during audits",
+        "Workers can be trusted to self-monitor without any checks"
+      ],
+      "correct": 0,
+      "id": 283
+    },
+    {
+      "category": "PPE",
+      "question": "What should be done if a PPE item's expiration date has passed?",
+      "options": [
+        "Remove it from service, since expired PPE may not provide reliable protection",
+        "Continue using it if it looks physically intact",
+        "Expiration dates on PPE are not meaningful",
+        "Only replace it if it fails during use"
+      ],
+      "correct": 0,
+      "id": 284
+    },
+    {
+      "category": "PPE",
+      "question": "Why is training on correct PPE donning and doffing important?",
+      "options": [
+        "Improper use can reduce protection or cause contamination during removal",
+        "Donning and doffing technique has no safety relevance",
+        "Only medical staff need this training",
+        "PPE removal order does not matter"
+      ],
+      "correct": 0,
+      "id": 285
+    },
+    {
+      "category": "PPE",
+      "question": "What should be verified about a harness's anchor point before use at height?",
+      "options": [
+        "That it is rated for the load and properly certified for fall protection",
+        "Any fixed point is suitable as an anchor",
+        "Anchor point rating is not an important consideration",
+        "Only the harness itself needs inspection, not the anchor"
+      ],
+      "correct": 0,
+      "id": 286
+    },
+    {
+      "category": "PPE",
+      "question": "Why should PPE be selected considering the duration of exposure?",
+      "options": [
+        "Extended exposure may require higher-rated or different protective equipment",
+        "Duration of exposure has no bearing on PPE selection",
+        "Short exposures never require PPE",
+        "All PPE is rated for unlimited exposure duration"
+      ],
+      "correct": 0,
+      "id": 287
+    },
+    {
+      "category": "PPE",
+      "question": "What should be done if PPE supplied does not meet the required safety standard for the task?",
+      "options": [
+        "Request compliant PPE and do not proceed until it is provided",
+        "Use it anyway since it is better than nothing",
+        "Standards are only guidelines and can be ignored",
+        "Substandard PPE is acceptable for short tasks"
+      ],
+      "correct": 0,
+      "id": 288
+    },
+    {
+      "category": "PPE",
+      "question": "Why is eye protection required even when performing tasks that seem low-risk?",
+      "options": [
+        "Unexpected debris or splashes can occur even during routine tasks",
+        "Eye protection is only needed for obviously hazardous tasks",
+        "Low-risk tasks never pose a risk to the eyes",
+        "Eye protection is a formality with no real benefit"
+      ],
+      "correct": 0,
+      "id": 289
+    },
+    {
+      "category": "PPE",
+      "question": "What is the purpose of color-coded PPE or hard hats on some sites?",
+      "options": [
+        "To visually distinguish roles, trades, or authorization levels for safety coordination",
+        "Color coding is purely decorative",
+        "It has no relevance to site safety management",
+        "Only visitors use color-coded PPE"
+      ],
+      "correct": 0,
+      "id": 290
+    },
+    {
+      "category": "Permit Types",
+      "question": "Which permit would typically be required for painting work involving flammable solvents in an enclosed area?",
+      "options": [
+        "Cold Work Permit with ventilation and flammability controls",
+        "No permit is required for painting",
+        "Always a Hot Work Permit regardless of solvent type",
+        "Only an Excavation Permit applies"
+      ],
+      "correct": 0,
+      "id": 291
+    },
+    {
+      "category": "Permit Types",
+      "question": "What permit type is generally used for work involving pressure washing near electrical equipment?",
+      "options": [
+        "Cold Work Permit with electrical hazard precautions",
+        "Electrical Isolation Permit only, with no other checks",
+        "No permit is required for pressure washing",
+        "Hot Work Permit always applies"
+      ],
+      "correct": 0,
+      "id": 292
+    },
+    {
+      "category": "Permit Types",
+      "question": "Which permit applies to entry into a space with a history of hydrogen sulfide (H2S) presence?",
+      "options": [
+        "Confined Space Entry Permit with H2S-specific monitoring",
+        "Standard Cold Work Permit with no gas testing",
+        "No permit is required if ventilation fans are running",
+        "Excavation Permit only"
+      ],
+      "correct": 0,
+      "id": 293
+    },
+    {
+      "category": "Permit Types",
+      "question": "What permit type is typically required for testing or calibrating instrumentation in a hazardous area?",
+      "options": [
+        "Cold Work Permit with area classification considerations",
+        "Always requires a Hot Work Permit",
+        "No permit is required for instrument calibration",
+        "Only a Lifting Permit applies"
+      ],
+      "correct": 0,
+      "id": 294
+    },
+    {
+      "category": "Permit Types",
+      "question": "Which permit covers temporary electrical connections for site equipment?",
+      "options": [
+        "Electrical Work Permit verifying proper installation and isolation",
+        "No permit is required for temporary connections",
+        "Only a Cold Work Permit with no electrical checks",
+        "Excavation Permit only"
+      ],
+      "correct": 0,
+      "id": 295
+    },
+    {
+      "category": "Permit Types",
+      "question": "What permit type applies to removing or bypassing a fire/gas detection system temporarily?",
+      "options": [
+        "Impairment/Bypass Permit with compensatory fire watch measures",
+        "No special permit is needed",
+        "Standard Cold Work Permit with no compensatory measures",
+        "Hot Work Permit only"
+      ],
+      "correct": 0,
+      "id": 296
+    },
+    {
+      "category": "Permit Types",
+      "question": "Which permit is required for work involving cutting into a live (in-service) pipeline?",
+      "options": [
+        "Hot or Cold Work Permit combined with line isolation/line-breaking procedures",
+        "No permit is required if flow is reduced",
+        "Only an Excavation Permit applies",
+        "Standard Cold Work Permit with no isolation verification"
+      ],
+      "correct": 0,
+      "id": 297
+    },
+    {
+      "category": "Permit Types",
+      "question": "What permit type generally covers use of a forklift in a process area?",
+      "options": [
+        "Vehicle/Mobile Equipment Entry Permit with area-specific checks",
+        "No permit is required for forklifts",
+        "Only a Lifting Permit applies",
+        "Standard Cold Work Permit with no vehicle considerations"
+      ],
+      "correct": 0,
+      "id": 298
+    },
+    {
+      "category": "Permit Types",
+      "question": "Which permit applies to abrasive blasting (sandblasting) operations?",
+      "options": [
+        "Cold or Hot Work Permit depending on ignition risk, with respiratory and containment controls",
+        "No permit is required for blasting",
+        "Only a Lifting Permit applies",
+        "Excavation Permit only"
+      ],
+      "correct": 0,
+      "id": 299
+    },
+    {
+      "category": "Permit Types",
+      "question": "What permit type would be needed for erecting or dismantling formwork at height?",
+      "options": [
+        "Working at Height Permit with structural and fall-protection considerations",
+        "No permit is required for formwork",
+        "Only an Excavation Permit applies",
+        "Standard Cold Work Permit with no height considerations"
+      ],
+      "correct": 0,
+      "id": 300
+    },
+    {
+      "category": "Permit Types",
+      "question": "Which permit is required for work inside a pressure vessel after it has been opened for inspection?",
+      "options": [
+        "Confined Space Entry Permit combined with isolation verification",
+        "No permit is required once the vessel is open",
+        "Only a Hot Work Permit applies",
+        "Excavation Permit only"
+      ],
+      "correct": 0,
+      "id": 301
+    },
+    {
+      "category": "Permit Types",
+      "question": "What permit type covers hydro-testing of newly installed piping?",
+      "options": [
+        "Cold Work/Pressure Test Permit with pressure safety controls",
+        "No permit is required for hydro-testing",
+        "Always requires a Hot Work Permit",
+        "Only a Lifting Permit applies"
+      ],
+      "correct": 0,
+      "id": 302
+    },
+    {
+      "category": "Permit Types",
+      "question": "Which permit applies to work requiring removal of a machine guard for maintenance?",
+      "options": [
+        "Cold Work Permit combined with lockout/tagout of the machine",
+        "No permit is required if the machine looks off",
+        "Only an Excavation Permit applies",
+        "Standard Hot Work Permit regardless of guard removal"
+      ],
+      "correct": 0,
+      "id": 303
+    },
+    {
+      "category": "Permit Types",
+      "question": "What permit type is generally needed for work in an area newly classified as hazardous due to a nearby leak?",
+      "options": [
+        "Reassessed Cold/Hot Work Permit reflecting the new hazard classification",
+        "The original permit remains valid with no changes needed",
+        "No permit changes are required for temporary hazards",
+        "Only a verbal update is needed, no permit revision"
+      ],
+      "correct": 0,
+      "id": 304
+    },
+    {
+      "category": "Permit Types",
+      "question": "Which permit covers work performed using non-intrinsically-safe electronic devices in a classified area?",
+      "options": [
+        "A permit prohibiting or specifically controlling use of such devices in that area",
+        "No permit consideration is needed for personal electronics",
+        "Standard Cold Work Permit with no device restrictions",
+        "Only applies to company-issued devices, not personal ones"
+      ],
+      "correct": 0,
+      "id": 305
+    },
+    {
+      "category": "Emergency",
+      "question": "What should you do if you discover an unresponsive person near hazardous chemicals?",
+      "options": [
+        "Avoid direct exposure yourself, alert emergency responders, and assist per your training",
+        "Immediately move them without assessing the hazard",
+        "Wait for them to regain consciousness on their own",
+        "Ignore it if you're not medically trained"
+      ],
+      "correct": 0,
+      "id": 306
+    },
+    {
+      "category": "Emergency",
+      "question": "Why is it important to know the location of the nearest emergency phone or call point?",
+      "options": [
+        "Quick access to communication can significantly speed up emergency response",
+        "Emergency phones are rarely functional and not worth locating",
+        "Only supervisors need to know their locations",
+        "Mobile phones always work better in emergencies"
+      ],
+      "correct": 0,
+      "id": 307
+    },
+    {
+      "category": "Emergency",
+      "question": "What should be done if an emergency occurs during a shift change?",
+      "options": [
+        "Both incoming and outgoing shifts should follow the emergency plan and coordinate",
+        "Only the outgoing shift needs to respond",
+        "Emergency response can wait until the shift change is complete",
+        "New shift workers are exempt from emergency response until briefed"
+      ],
+      "correct": 0,
+      "id": 308
+    },
+    {
+      "category": "Emergency",
+      "question": "Why should personnel avoid using elevators during a fire emergency?",
+      "options": [
+        "Elevators can malfunction or become trapped due to power loss or fire damage",
+        "Elevators are always safe to use during fires",
+        "Elevators are faster and preferred in every emergency",
+        "Only management is restricted from using elevators"
+      ],
+      "correct": 0,
+      "id": 309
+    },
+    {
+      "category": "Emergency",
+      "question": "What is the purpose of an emergency notification/alert system test?",
+      "options": [
+        "To ensure the system will function properly during an actual emergency",
+        "Testing has no real value once the system is installed",
+        "Only new systems need to be tested",
+        "Alert systems never require testing"
+      ],
+      "correct": 0,
+      "id": 310
+    },
+    {
+      "category": "Emergency",
+      "question": "What should be done if you are unsure whether an alarm is a drill or a real emergency?",
+      "options": [
+        "Treat it as real and follow evacuation procedures until told otherwise",
+        "Assume it's a drill and continue working",
+        "Wait for confirmation before taking any action",
+        "Ignore alarms that seem to happen too often"
+      ],
+      "correct": 0,
+      "id": 311
+    },
+    {
+      "category": "Emergency",
+      "question": "Why is it important to secure hazardous materials properly before an anticipated severe weather event?",
+      "options": [
+        "Unsecured materials can become hazards themselves during storms or high winds",
+        "Weather has no effect on hazardous material storage",
+        "Only liquid materials need securing before storms",
+        "Securing materials is unnecessary if the storm seems minor"
+      ],
+      "correct": 0,
+      "id": 312
+    },
+    {
+      "category": "Emergency",
+      "question": "What should be done if a fire suppression system activates unexpectedly?",
+      "options": [
+        "Evacuate the affected area and report it, treating it as a real emergency until confirmed otherwise",
+        "Assume it's a false alarm and continue working",
+        "Try to shut off the system before evacuating",
+        "Ignore it if no smoke or fire is visible"
+      ],
+      "correct": 0,
+      "id": 313
+    },
+    {
+      "category": "Emergency",
+      "question": "Why should personal protective equipment be considered when planning an emergency evacuation route?",
+      "options": [
+        "Some PPE may need to be removed or adjusted to move safely and quickly",
+        "PPE has no effect on evacuation speed or safety",
+        "Evacuation routes are unrelated to PPE use",
+        "All PPE should always be kept on during evacuation regardless of type"
+      ],
+      "correct": 0,
+      "id": 314
+    },
+    {
+      "category": "Emergency",
+      "question": "What is the correct response if you become aware of a bomb threat or suspicious item on site?",
+      "options": [
+        "Report it immediately to security/emergency services and follow evacuation instructions",
+        "Investigate the item yourself to confirm the threat",
+        "Ignore it unless it looks obviously dangerous",
+        "Only report it if you personally feel threatened"
+      ],
+      "correct": 0,
+      "id": 315
+    },
+    {
+      "category": "Emergency",
+      "question": "Why is it important for visitors and contractors to receive an emergency safety briefing?",
+      "options": [
+        "They may be unfamiliar with site-specific emergency procedures and assembly points",
+        "Visitors are exempt from following emergency procedures",
+        "Briefings are only required for long-term contractors",
+        "Emergency procedures are the same everywhere, so briefings aren't needed"
+      ],
+      "correct": 0,
+      "id": 316
+    },
+    {
+      "category": "Emergency",
+      "question": "What should be done with emergency lighting systems during routine maintenance checks?",
+      "options": [
+        "Test them regularly to confirm they activate properly during power failure",
+        "Emergency lighting rarely needs checking once installed",
+        "Only check them after an actual power failure",
+        "Emergency lighting is optional in most facilities"
+      ],
+      "correct": 0,
+      "id": 317
+    },
+    {
+      "category": "Emergency",
+      "question": "Why should assembly area capacity be considered when planning site emergency procedures?",
+      "options": [
+        "Overcrowded or undersized assembly points can hinder accurate headcounts and safety",
+        "Assembly area size has no bearing on emergency response effectiveness",
+        "Only large facilities need to consider assembly area capacity",
+        "Capacity planning is only relevant for scheduled events, not emergencies"
+      ],
+      "correct": 0,
+      "id": 318
+    },
+    {
+      "category": "Emergency",
+      "question": "What should be done if emergency equipment (e.g., stretchers, spill kits) is found to be missing or depleted?",
+      "options": [
+        "Report it immediately so it can be replenished before it's needed",
+        "Wait until the next scheduled inspection to report it",
+        "Assume another department will notice and report it",
+        "Missing equipment is not a priority unless an emergency is imminent"
+      ],
+      "correct": 0,
+      "id": 319
+    },
+    {
+      "category": "Emergency",
+      "question": "Why is it valuable to review and update emergency contact numbers periodically?",
+      "options": [
+        "Outdated contacts can delay critical communication during a real emergency",
+        "Contact numbers rarely change and don't need review",
+        "Only the main office number needs to be current",
+        "Reviewing contacts is only necessary after an incident occurs"
+      ],
+      "correct": 0,
+      "id": 320
+    },
+    {
+      "category": "Hot Work",
+      "question": "What should be done regarding underground cables or pipelines before hot work involving excavation nearby?",
+      "options": [
+        "Verify their location and depth to avoid accidental damage or ignition risk",
+        "Underground utilities are irrelevant to hot work safety",
+        "Only check for utilities if excavation exceeds a certain depth",
+        "Assume utility maps are always accurate without on-site verification"
+      ],
+      "correct": 0,
+      "id": 321
+    },
+    {
+      "category": "Hot Work",
+      "question": "Why should hot work near air intakes or ventilation systems require extra caution?",
+      "options": [
+        "Smoke or fumes could be drawn into occupied areas through the ventilation system",
+        "Ventilation systems have no effect on hot work hazards",
+        "Only outdoor air intakes need consideration",
+        "Hot work near ventilation is always prohibited without exception"
+      ],
+      "correct": 0,
+      "id": 322
+    },
+    {
+      "category": "Hot Work",
+      "question": "What should be verified about a welding machine's grounding before use?",
+      "options": [
+        "That it is properly grounded to prevent electrical hazards",
+        "Grounding is only relevant for very large welding machines",
+        "Grounding checks are unnecessary if the machine is new",
+        "Only the power cord needs checking, not grounding"
+      ],
+      "correct": 0,
+      "id": 323
+    },
+    {
+      "category": "Hot Work",
+      "question": "Why is it important to know the flash point of nearby materials before hot work?",
+      "options": [
+        "Materials with a low flash point can ignite more easily from heat or sparks",
+        "Flash point has no relevance to hot work planning",
+        "Only liquids have a flash point that matters",
+        "Flash point only matters for storage, not active work areas"
+      ],
+      "correct": 0,
+      "id": 324
+    },
+    {
+      "category": "Hot Work",
+      "question": "What should be done if hot work must be performed on galvanized or coated metal?",
+      "options": [
+        "Be aware of and control exposure to hazardous fumes released during heating",
+        "Coatings have no effect on hot work hazards",
+        "Only ventilation for dust needs to be considered",
+        "Coated metals are always safe to weld without precaution"
+      ],
+      "correct": 0,
+      "id": 325
+    },
+    {
+      "category": "Hot Work",
+      "question": "Why should a hot work permit specify the exact duration and shift coverage?",
+      "options": [
+        "To ensure the required precautions, like fire watch, are maintained throughout the entire work period",
+        "Duration details are not necessary for hot work permits",
+        "Only the start time needs to be specified",
+        "Shift coverage is irrelevant to hot work safety"
+      ],
+      "correct": 0,
+      "id": 326
+    },
+    {
+      "category": "Hot Work",
+      "question": "What should be checked about nearby fire detection/suppression systems before hot work in that area?",
+      "options": [
+        "Whether they need to be temporarily adjusted to avoid false activation, with compensatory measures",
+        "Fire detection systems never need consideration during hot work",
+        "Only sprinkler systems require any adjustment",
+        "Detection systems should always be left exactly as-is regardless of hot work"
+      ],
+      "correct": 0,
+      "id": 327
+    },
+    {
+      "category": "Hot Work",
+      "question": "Why must fire watch personnel be equipped with appropriate firefighting equipment?",
+      "options": [
+        "To respond immediately if a fire starts during or after hot work",
+        "Fire watch personnel do not need any equipment",
+        "Only the hot work operator needs firefighting equipment",
+        "Equipment is only needed for large-scale hot work jobs"
+      ],
+      "correct": 0,
+      "id": 328
+    },
+    {
+      "category": "Hot Work",
+      "question": "What should be done if hot work generates excessive smoke affecting visibility?",
+      "options": [
+        "Improve ventilation or pause work until visibility and air quality are safe",
+        "Continue work since smoke is a normal part of hot work",
+        "Only address it if someone complains",
+        "Visibility issues from smoke are not a safety concern"
+      ],
+      "correct": 0,
+      "id": 329
+    },
+    {
+      "category": "Hot Work",
+      "question": "Why should the area beneath elevated hot work be assessed for hazards?",
+      "options": [
+        "Falling sparks or slag can ignite materials or injure people below",
+        "Areas below elevated hot work require no special assessment",
+        "Only the immediate work platform needs checking",
+        "This only matters for work performed indoors"
+      ],
+      "correct": 0,
+      "id": 330
+    },
+    {
+      "category": "Hot Work",
+      "question": "What is the purpose of hot work restrictions during turnaround/shutdown periods with increased activity?",
+      "options": [
+        "To manage the higher risk from multiple simultaneous activities and increased fire load",
+        "Turnaround periods require no additional hot work precautions",
+        "Restrictions are only for cost control, not safety",
+        "Increased activity has no bearing on hot work risk"
+      ],
+      "correct": 0,
+      "id": 331
+    },
+    {
+      "category": "Hot Work",
+      "question": "Why should combustible gas testing equipment be positioned correctly during hot work?",
+      "options": [
+        "Incorrect positioning may fail to detect a hazardous buildup of gas",
+        "Positioning of gas testing equipment does not affect its accuracy",
+        "Any location within the general area is equally effective",
+        "Gas testing equipment position only matters in confined spaces"
+      ],
+      "correct": 0,
+      "id": 332
+    },
+    {
+      "category": "Hot Work",
+      "question": "What should be done if hot work must be conducted near stored fuel or chemical drums?",
+      "options": [
+        "Relocate them to a safe distance or provide adequate shielding and gas testing",
+        "Fuel drums pose no additional risk if they are closed",
+        "Only check for leaks, not proximity",
+        "Proceed as normal since hot work permits already cover this"
+      ],
+      "correct": 0,
+      "id": 333
+    },
+    {
+      "category": "Hot Work",
+      "question": "Why is a written procedure important for hot work involving unusual or high-risk configurations?",
+      "options": [
+        "It ensures all specific hazards are identified and controlled systematically",
+        "Written procedures are unnecessary if workers are experienced",
+        "Only new employees need written procedures for hot work",
+        "Standard hot work permits always cover unusual configurations adequately"
+      ],
+      "correct": 0,
+      "id": 334
+    },
+    {
+      "category": "Hot Work",
+      "question": "What should be done at the end of a shift if hot work is incomplete and will resume the next day?",
+      "options": [
+        "Secure the area, extinguish all sources, and conduct a fire watch as required before leaving",
+        "Simply lock the area without any fire watch",
+        "Leave equipment as-is since work will resume soon",
+        "No special end-of-shift precautions are needed for hot work"
+      ],
+      "correct": 0,
+      "id": 335
+    },
+    {
+      "category": "Confined Space",
+      "question": "What should be done if a confined space has multiple entry points?",
+      "options": [
+        "Assess and control all entry points as part of the permit and monitoring plan",
+        "Only the main entry point needs to be considered",
+        "Additional entry points have no bearing on safety planning",
+        "Multiple entry points always make a space safer"
+      ],
+      "correct": 0,
+      "id": 336
+    },
+    {
+      "category": "Confined Space",
+      "question": "Why is it important to know the volume and shape of a confined space before entry?",
+      "options": [
+        "It affects ventilation needs, gas behavior, and rescue planning",
+        "Volume and shape have no effect on entry safety",
+        "Only the entry point size matters",
+        "This information is only relevant for very large spaces"
+      ],
+      "correct": 0,
+      "id": 337
+    },
+    {
+      "category": "Confined Space",
+      "question": "What should be done if temperature inside a confined space is extremely high?",
+      "options": [
+        "Assess heat stress risk and implement controls like rest breaks or cooling measures",
+        "Temperature has no bearing on confined space safety",
+        "Only ventilation needs to be considered, not temperature",
+        "High temperature is only a concern in outdoor confined spaces"
+      ],
+      "correct": 0,
+      "id": 338
+    },
+    {
+      "category": "Confined Space",
+      "question": "Why should confined space entry be avoided during unrelated nearby hazardous operations?",
+      "options": [
+        "Nearby operations could introduce hazards like gas migration into the confined space",
+        "Nearby operations never affect confined space conditions",
+        "Only operations inside the same building are relevant",
+        "This only matters if the operations are hot work"
+      ],
+      "correct": 0,
+      "id": 339
+    },
+    {
+      "category": "Confined Space",
+      "question": "What is the purpose of a gas test log during confined space entry?",
+      "options": [
+        "To document readings over time and confirm continued safe conditions",
+        "Gas test logs are only for administrative records with no safety value",
+        "Only the first reading needs to be logged",
+        "Logging gas tests is optional if the space seemed safe initially"
+      ],
+      "correct": 0,
+      "id": 340
+    },
+    {
+      "category": "Confined Space",
+      "question": "Why should entrants be briefed on the specific escape route from a confined space?",
+      "options": [
+        "Knowing the fastest safe exit is critical in an emergency",
+        "Escape routes are always obvious and don't need briefing",
+        "Only the standby person needs to know the escape route",
+        "Escape route briefing is only needed for very deep spaces"
+      ],
+      "correct": 0,
+      "id": 341
+    },
+    {
+      "category": "Confined Space",
+      "question": "What should be done if the confined space entry involves working with hazardous materials inside?",
+      "options": [
+        "Ensure appropriate PPE, ventilation, and spill controls specific to those materials are in place",
+        "Hazardous materials require no additional confined space precautions",
+        "Only ventilation matters, not PPE or spill control",
+        "This is treated the same as an empty confined space"
+      ],
+      "correct": 0,
+      "id": 342
+    },
+    {
+      "category": "Confined Space",
+      "question": "Why is it important to have continuous monitoring rather than only spot checks in high-risk confined spaces?",
+      "options": [
+        "Conditions can change quickly, and continuous monitoring catches hazards spot checks might miss",
+        "Spot checks are always sufficient regardless of risk level",
+        "Continuous monitoring is only needed for very large spaces",
+        "Monitoring frequency has no real safety impact"
+      ],
+      "correct": 0,
+      "id": 343
+    },
+    {
+      "category": "Confined Space",
+      "question": "What should be verified about a confined space's structural integrity before entry?",
+      "options": [
+        "That it is stable and safe to enter without risk of collapse",
+        "Structural integrity is not a confined space concern",
+        "Only new structures need integrity checks",
+        "This only applies to underground confined spaces"
+      ],
+      "correct": 0,
+      "id": 344
+    },
+    {
+      "category": "Confined Space",
+      "question": "Why should confined space rescue teams practice with the actual equipment used on site?",
+      "options": [
+        "Familiarity with the specific equipment improves response speed and effectiveness during a real rescue",
+        "Practice is not necessary if the equipment is standard",
+        "Only professional rescue services need to practice",
+        "Rescue equipment is the same everywhere so practice isn't needed"
+      ],
+      "correct": 0,
+      "id": 345
+    },
+    {
+      "category": "Confined Space",
+      "question": "What should be done if an entrant reports feeling dizzy or unwell inside a confined space?",
+      "options": [
+        "Evacuate them immediately and assess the atmosphere before allowing re-entry",
+        "Continue monitoring while they remain inside",
+        "Assume it's unrelated to the confined space conditions",
+        "Wait to see if the symptoms worsen before acting"
+      ],
+      "correct": 0,
+      "id": 346
+    },
+    {
+      "category": "Confined Space",
+      "question": "Why must confined space entry permits address specific isolation of connected piping or ductwork?",
+      "options": [
+        "Connected systems could introduce hazardous materials or energy into the space",
+        "Connected piping has no bearing on confined space safety",
+        "Only the main entry point needs isolation consideration",
+        "Isolation of connected systems is optional if they appear closed"
+      ],
+      "correct": 0,
+      "id": 347
+    },
+    {
+      "category": "Confined Space",
+      "question": "What should be done if a confined space has limited radio communication reception?",
+      "options": [
+        "Establish an alternative reliable communication method before allowing entry",
+        "Proceed with entry and address communication issues if they arise",
+        "Limited reception is acceptable if the space is small",
+        "Communication problems only matter for long-duration entries"
+      ],
+      "correct": 0,
+      "id": 348
+    },
+    {
+      "category": "Confined Space",
+      "question": "Why should the number of entrants in a confined space be limited to what is necessary?",
+      "options": [
+        "Fewer entrants reduces congestion and simplifies monitoring and emergency evacuation",
+        "More entrants always improves safety through numbers",
+        "Entrant numbers have no bearing on confined space risk",
+        "Limiting entrants is only a productivity concern, not safety"
+      ],
+      "correct": 0,
+      "id": 349
+    },
+    {
+      "category": "Confined Space",
+      "question": "What should be done if a confined space entry permit's emergency procedures differ from the site's general emergency plan?",
+      "options": [
+        "Clarify and align them to avoid confusion during an actual emergency",
+        "The confined space permit's procedures should be ignored in favor of the general plan",
+        "Any discrepancy is acceptable if entrants are experienced",
+        "This kind of conflict does not need to be resolved beforehand"
+      ],
+      "correct": 0,
+      "id": 350
     }
   ]
 }
