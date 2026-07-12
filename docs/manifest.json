@@ -1,7 +1,7 @@
 {
-  "name": "Saudi Aramco Work Permit Quiz",
-  "short_name": "Aramco Quiz",
-  "description": "Practice quiz for Saudi Aramco work permit receiver",
+  "name": "WPR Quiz MJH",
+  "short_name": "WPR Quiz MJH",
+  "description": "Practice quiz for work permit receiver (WPR) certification",
   "start_url": "/wpr-quiz-aramco/",
   "scope": "/wpr-quiz-aramco/",
   "display": "standalone",
@@ -22,7 +22,13 @@
       "src": "/wpr-quiz-aramco/icons/icon-512.png",
       "sizes": "512x512",
       "type": "image/png",
-      "purpose": "any maskable"
+      "purpose": "any"
+    },
+    {
+      "src": "/wpr-quiz-aramco/icons/icon-maskable-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "maskable"
     }
   ]
 }

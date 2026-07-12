@@ -104,7 +104,7 @@ function App() {
       <div className="app-container">
         <div className="test-card start-card">
           <div className="logo">🛢️</div>
-          <h1>Saudi Aramco Work Permit Quiz</h1>
+          <h1>WPR Quiz MJH</h1>
           <p className="subtitle">Computer-Based Test (CBT) Practice</p>
 
           <label className="field-label">Select Category</label>
@@ -213,7 +213,7 @@ function App() {
       <div className="app-container">
         <div className="test-header">
           <div className="test-header-top">
-            <span className="test-title">Saudi Aramco Work Permit Quiz</span>
+            <span className="test-title">WPR Quiz MJH</span>
             <span className="timer">⏱ {formatTime(timeLeft)}</span>
           </div>
           <div className="progress-bar">
