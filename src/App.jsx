@@ -15,12 +15,13 @@ function shuffle(arr) {
 }
 
 function App() {
-  const [stage, setStage] = useState('start') // start | test | result
+  const [stage, setStage] = useState('start')
   const [categoryFilter, setCategoryFilter] = useState('All')
   const [testQuestions, setTestQuestions] = useState([])
   const [currentIndex, setCurrentIndex] = useState(0)
   const [answers, setAnswers] = useState({})
   const [timeLeft, setTimeLeft] = useState(0)
+  const [revealed, setRevealed] = useState(false)
 
   useEffect(() => {
     if (stage !== 'test') return
@@ -32,6 +33,15 @@ function App() {
     return () => clearInterval(timer)
   }, [stage, timeLeft])
 
+  useEffect(() => {
+    if (!revealed) return
+    const t = setTimeout(() => {
+      goNext()
+    }, 5000)
+    return () => clearTimeout(t)
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [revealed])
+
   const startTest = () => {
     const pool = categoryFilter === 'All'
       ? allQuestions
@@ -40,15 +50,19 @@ function App() {
     setTestQuestions(shuffled)
     setCurrentIndex(0)
     setAnswers({})
+    setRevealed(false)
     setTimeLeft(shuffled.length * 45)
     setStage('test')
   }
 
   const selectOption = (idx) => {
+    if (revealed) return
     setAnswers(prev => ({ ...prev, [currentIndex]: idx }))
+    setRevealed(true)
   }
 
   const goNext = () => {
+    setRevealed(false)
     if (currentIndex + 1 < testQuestions.length) {
       setCurrentIndex(currentIndex + 1)
     } else {
@@ -57,7 +71,10 @@ function App() {
   }
 
   const goPrev = () => {
-    if (currentIndex > 0) setCurrentIndex(currentIndex - 1)
+    if (currentIndex > 0) {
+      setRevealed(false)
+      setCurrentIndex(currentIndex - 1)
+    }
   }
 
   const formatTime = (s) => {
@@ -125,24 +142,45 @@ function App() {
           <span className="category-badge">{q.category}</span>
           <h2 className="question-text">{q.question}</h2>
           <div className="options-list">
-            {q.options.map((opt, idx) => (
-              <button
-                key={idx}
-                className={`option-item ${selected === idx ? 'selected' : ''}`}
-                onClick={() => selectOption(idx)}
-              >
-                <span className="option-letter">{String.fromCharCode(65 + idx)}</span>
-                <span className="option-text">{opt}</span>
-              </button>
-            ))}
+            {q.options.map((opt, idx) => {
+              let cls = 'option-item'
+              if (revealed) {
+                if (idx === q.correct) cls += ' correct'
+                else if (idx === selected) cls += ' wrong'
+                else cls += ' dimmed'
+              } else if (selected === idx) {
+                cls += ' selected'
+              }
+              return (
+                <button
+                  key={idx}
+                  className={cls}
+                  onClick={() => selectOption(idx)}
+                  disabled={revealed}
+                >
+                  <span className="option-letter">{String.fromCharCode(65 + idx)}</span>
+                  <span className="option-text">{opt}</span>
+                  {revealed && idx === q.correct && <span className="option-icon correct-icon">✓</span>}
+                  {revealed && idx === selected && idx !== q.correct && <span className="option-icon wrong-icon">✗</span>}
+                </button>
+              )
+            })}
           </div>
+
+          {revealed && (
+            <div className={`feedback-banner ${selected === q.correct ? 'feedback-correct' : 'feedback-wrong'}`}>
+              {selected === q.correct ? '✓ Correct!' : '✗ Incorrect'} &nbsp; Moving to next question...
+            </div>
+          )}
 
           <div className="nav-buttons">
             <button className="btn-secondary" onClick={goPrev} disabled={currentIndex === 0}>
               Previous
             </button>
             {currentIndex + 1 < testQuestions.length ? (
-              <button className="btn-primary" onClick={goNext}>Next</button>
+              <button className="btn-primary" onClick={goNext}>
+                {revealed ? 'Next Now' : 'Skip'}
+              </button>
             ) : (
               <button className="btn-primary btn-submit" onClick={() => setStage('result')}>
                 Submit Test
