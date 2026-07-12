@@ -25,10 +25,24 @@ function App() {
   const [revealed, setRevealed] = useState(false)
   const [selectedItem, setSelectedItem] = useState(null)
 
+  const navigate = (newStage) => {
+    window.history.pushState({ stage: newStage }, '')
+    setStage(newStage)
+  }
+
+  useEffect(() => {
+    window.history.replaceState({ stage: 'start' }, '')
+    const onPopState = (e) => {
+      setStage(e.state?.stage || 'start')
+    }
+    window.addEventListener('popstate', onPopState)
+    return () => window.removeEventListener('popstate', onPopState)
+  }, [])
+
   useEffect(() => {
     if (stage !== 'test') return
     if (timeLeft <= 0) {
-      setStage('result')
+      navigate('result')
       return
     }
     const timer = setInterval(() => setTimeLeft(t => t - 1), 1000)
@@ -54,7 +68,7 @@ function App() {
     setAnswers({})
     setRevealed(false)
     setTimeLeft(shuffled.length * 45)
-    setStage('test')
+    navigate('test')
   }
 
   const selectOption = (idx) => {
@@ -68,7 +82,7 @@ function App() {
     if (currentIndex + 1 < testQuestions.length) {
       setCurrentIndex(currentIndex + 1)
     } else {
-      setStage('result')
+      navigate('result')
     }
   }
 
@@ -112,7 +126,7 @@ function App() {
           </select>
 
           <button className="btn-primary" onClick={startTest}>Start Test</button>
-          <button className="btn-secondary ref-btn" onClick={() => setStage('reference')}>
+          <button className="btn-secondary ref-btn" onClick={() => navigate('reference')}>
             📖 Reference Guide
           </button>
         </div>
@@ -173,7 +187,7 @@ function App() {
             ))}
           </div>
 
-          <button className="btn-primary" onClick={() => setStage('start')}>Back to Home</button>
+          <button className="btn-primary" onClick={() => navigate('start')}>Back to Home</button>
         </div>
 
         {selectedItem && (
@@ -257,7 +271,7 @@ function App() {
                 {revealed ? 'Next Now' : 'Skip'}
               </button>
             ) : (
-              <button className="btn-primary btn-submit" onClick={() => setStage('result')}>
+              <button className="btn-primary btn-submit" onClick={() => navigate('result')}>
                 Submit Test
               </button>
             )}
@@ -303,7 +317,7 @@ function App() {
           })}
         </div>
 
-        <button className="btn-primary" onClick={() => setStage('start')}>Take Another Test</button>
+        <button className="btn-primary" onClick={() => navigate('start')}>Take Another Test</button>
       </div>
     </div>
   )
