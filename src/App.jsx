@@ -1,7 +1,7 @@
 import { useState, useEffect } from 'react'
 import './App.css'
 import questionsData from './questions.json'
-import { abbreviations, permitGuide, safetyItems } from './referenceData'
+import { abbreviations, permitGuide, safetyItems, colorCoding } from './referenceData'
 
 const allQuestions = questionsData.questions
 const categories = ['All', ...new Set(allQuestions.map(q => q.category))]
@@ -23,6 +23,7 @@ function App() {
   const [answers, setAnswers] = useState({})
   const [timeLeft, setTimeLeft] = useState(0)
   const [revealed, setRevealed] = useState(false)
+  const [selectedItem, setSelectedItem] = useState(null)
 
   useEffect(() => {
     if (stage !== 'test') return
@@ -145,15 +146,46 @@ function App() {
             ))}
           </div>
 
-          <h2 className="ref-section-title">Common Safety Items / PPE Checklist</h2>
-          <ul className="ref-list">
-            {safetyItems.map((item, i) => (
-              <li key={i}>{item}</li>
+          <h2 className="ref-section-title">Permit Color Coding (Common Example)</h2>
+          <p className="ref-note">
+            Note: Permit colors vary by company/site. Always follow your site's official color code — this is a general reference example.
+          </p>
+          <div className="ref-color-list">
+            {colorCoding.map((c, i) => (
+              <div key={i} className="ref-color-row">
+                <span className="ref-color-swatch" style={{ background: c.hex }}></span>
+                <div className="ref-color-info">
+                  <span className="ref-color-name">{c.color}</span>
+                  <span className="ref-color-permits">{c.permits.join(', ')}</span>
+                </div>
+              </div>
             ))}
-          </ul>
+          </div>
+
+          <h2 className="ref-section-title">Common Safety Items / PPE Checklist</h2>
+          <p className="ref-note">Tap any item to see an icon and description.</p>
+          <div className="ref-item-grid">
+            {safetyItems.map((item, i) => (
+              <button key={i} className="ref-item-btn" onClick={() => setSelectedItem(item)}>
+                <span className="ref-item-icon">{item.icon}</span>
+                <span className="ref-item-name">{item.name}</span>
+              </button>
+            ))}
+          </div>
 
           <button className="btn-primary" onClick={() => setStage('start')}>Back to Home</button>
         </div>
+
+        {selectedItem && (
+          <div className="modal-overlay" onClick={() => setSelectedItem(null)}>
+            <div className="modal-box" onClick={e => e.stopPropagation()}>
+              <div className="modal-icon">{selectedItem.icon}</div>
+              <h3 className="modal-name">{selectedItem.name}</h3>
+              <p className="modal-desc">{selectedItem.desc}</p>
+              <button className="btn-primary" onClick={() => setSelectedItem(null)}>Close</button>
+            </div>
+          </div>
+        )}
       </div>
     )
   }
